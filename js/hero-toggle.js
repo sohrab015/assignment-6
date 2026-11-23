@@ -6,6 +6,8 @@ document.getElementById("login-btn").addEventListener("click", (event) => {
     let heroSection = document.getElementById("hero-section");
     let logOut = document.getElementById("logOut");
     let nav = document.getElementById("nav");
+    let main = document.getElementById("main");
+    let navBtns = document.getElementById("nav-btns");
 
     if (inputValue.trim() !== "") {
         if (pass.trim() == "123456") {
@@ -18,6 +20,8 @@ document.getElementById("login-btn").addEventListener("click", (event) => {
 
             heroSection.classList.add("hidden")
             nav.classList.remove("absolute");
+            main.classList.remove("hidden");
+            navBtns.classList.remove("hidden");
 
             document.getElementById("logOut").addEventListener("click", (event) => {
                 event.preventDefault();
@@ -25,6 +29,8 @@ document.getElementById("login-btn").addEventListener("click", (event) => {
                 if (!logOut.classList.contains("hidden")) {
                     heroSection.classList.remove("hidden")
                     nav.classList.add("absolute");
+                    main.classList.add("hidden");
+                    navBtns.classList.add("hidden");
 
                     Swal.fire({
                         title: "LogOut Success!",

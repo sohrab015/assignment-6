@@ -24,6 +24,10 @@
     <!-- swit alert -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
+    <!-- google icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=volume_up" />
+
 </head>
 
 <body>
@@ -31,7 +35,7 @@
     <header class="relative">
 
         <!-- nav bar -->
-        <nav id="nav" class="flex justify-between p-5 md:px-20 px-10 bg-[#C6BDBD30] m-0 pb-0md:px-10 absolute min-w-full">
+        <nav id="nav" class="flex justify-between p-5 md:px-20 px-10 bg-[#C6BDBD30] m-0 absolute min-w-full">
 
             <!-- left logo -->
             <div class="flex items-center text-md">
@@ -41,10 +45,13 @@
             </div>
 
             <!-- right buttons -->
-            <div>
-                <button class="btn btn-outline rounded-lg btn-primary border-2 px-1 w-[4.5rem]">
-                    <img src="assets/fa-circle-question.png" alt="">
-                    F&Q</button>
+            <div id="nav-btns" class="hidden">
+                <a href="#faqq" class="btn btn-outline rounded-lg btn-primary border-2 px-1 w-[4.5rem]">
+                    <span class="flex gap-1 items-center">
+                        <img class="w-4 h-4" src="assets/fa-circle-question.png" alt="">
+                        F&Q
+                    </span>
+                </a>
                 <button class="btn border-2 px-1 rounded-lg btn-outline btn-primary w-[4.5rem]">
                     <img src="assets/fa-book-open.png" alt="">
                     Learn</button>
@@ -93,21 +100,53 @@
 
     </header>
 
-    <main class="md:mx-20 mx-10 google-sans-eng mt-10">
+    <main id="main" class="md:mx-20 mx-10 google-sans-eng mt-10 ">
 
         <!-- main section -->
-        <section></section>
- 
-        <!-- f and q section -->
-        <section >
+        <section>
 
-            <h1 class="text-center mb-10  font-bold text-2xl google-sans-eng"><span class="text-sky-400">Frequently</span>
+            <h1 class="text-center mb-10  font-bold text-2xl google-sans-eng"><span class="text-sky-400">Let's</span>
+                Learn Vocabularies</h1>
+
+            <!-- lesson buttons -->
+            <section id="lesonButton" class="flex flex-wrap justify-center gap-2 mb-10">
+
+            </section>
+
+
+            <!-- first home e ja dekhabe -->
+            <section id="lessonFirstSection" class=" bg-[#C6BDBD30] text-center py-20 mb-10 flex flex-col gap-5">
+
+                <p class="md:text-2xl"><span class="hind-siliguri-regular">আপনি এখনো কোন</span> <span
+                        class="google-sans-eng">Lesson Select</span> <span class="hind-siliguri-regular">করেননি</span>
+                </p>
+
+                <h1 class="md:text-5xl"><span class="hind-siliguri-regular">একটি</span> <span
+                        class="google-sans-eng">Lesson Select</span> <span class="hind-siliguri-regular">করুন।</span>
+                </h1>
+
+            </section>
+
+
+            <!-- card section -->
+            <section id="cardContainer" class="mb-10 bg-[#C6BDBD30] p-3 flex items-center justify-center flex-wrap gap-3">
+
+            </section>
+
+        </section>
+
+        <!-- f and q section -->
+        <section id="faqq" class="mb-10">
+
+            <h1 class="text-center mb-10  font-bold text-2xl google-sans-eng"><span
+                    class="text-sky-400">Frequently</span>
                 Asked Questions</h1>
 
             <!-- 1 -->
             <div class="collapse mb-2  bg-base-100 border border-base-300">
                 <input type="checkbox" />
-                <div class="collapse-title font-semibold bg-[#C6BDBD80]">1. How can I start learning English on this website?</div>
+                <div class="collapse-title font-semibold bg-[#C6BDBD80]">1. How can I start learning English on this
+                    website?</div>
                 <div class="collapse-content bg-[#56353510] text-sm">
                     You can start by exploring our vocabulary lessons. Learn new English words with their Bengali
                     meanings, pronunciation, examples, and interactive exercises. </div>
@@ -116,7 +155,8 @@
             <!-- 2 -->
             <div class="collapse mb-2 bg-base-100 border border-base-300">
                 <input type="checkbox" />
-                <div class="collapse-title bg-[#C6BDBD80] font-semibold">2. Is this website suitable for beginners?</div>
+                <div class="collapse-title bg-[#C6BDBD80] font-semibold">2. Is this website suitable for beginners?
+                </div>
                 <div class="collapse-content bg-[#56353510] text-sm">
                     Yes! English Janala is designed for beginners. You can learn English step by step with easy
                     explanations, Bengali translations, and practical examples. </div>
@@ -134,7 +174,8 @@
             <!-- 4 -->
             <div class="collapse mb-2 bg-base-100 border border-base-300">
                 <input type="checkbox" />
-                <div class="collapse-title font-semibold bg-[#C6BDBD80]">4. How can I improve my English vocabulary?</div>
+                <div class="collapse-title font-semibold bg-[#C6BDBD80]">4. How can I improve my English vocabulary?
+                </div>
                 <div class="collapse-content text-sm bg-[#56353510]">
                     Practice regularly by learning new words, understanding their meanings, reading example sentences,
                     and completing interactive vocabulary exercises. </div>
@@ -143,7 +184,8 @@
             <!-- 5 -->
             <div class="collapse mb-2 bg-base-100 border border-base-300">
                 <input type="checkbox" />
-                <div class="collapse-title font-semibold bg-[#C6BDBD80]">5. Do you provide certificates for completing courses?</div>
+                <div class="collapse-title font-semibold bg-[#C6BDBD80]">5. Do you provide certificates for completing
+                    courses?</div>
                 <div class="collapse-content text-sm bg-[#56353510]">
                     Currently, English Janala focuses on helping learners improve their English vocabulary through
                     interactive lessons and practice activities. Certificate availability may be introduced in the
@@ -164,8 +206,11 @@
 
 
     <!-- java script files -->
-
     <script src="js/hero-toggle.js"></script>
+    <script src="js/lesson.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/seeInfo.js"></script>
+    <script src="js/makeSound.js"></script>
 
     <!-- swit alert script -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

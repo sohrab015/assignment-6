@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>English Janala</title>
+
+    <!-- daisi ui and tailwind css links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- style css folder -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <header class="relative">
+
+        <!-- nav bar -->
+        <nav class="flex justify-between p-5 bg-[#C6BDBD30] m-0 pb-0md:px-10 absolute min-w-full">
+
+            <!-- left logo -->
+            <div class="flex items-center text-md">
+                <p class="google-sans-eng">English</p>
+                <img class="w-8" src="assets/logo.png" alt="">
+                <p class="hind-siliguri-semibold">জানালা</p>
+            </div>
+
+            <!-- right buttons -->
+            <div>
+                <button class="btn btn-outline btn-primary w-[4.5rem]">
+                    <img src="assets/fa-circle-question.png" alt="">
+                    F&Q</button>
+                <button class="btn btn-outline btn-primary w-[4.5rem]">
+                    <img src="assets/fa-book-open.png" alt="">
+                    Learn</button>
+                <button class="btn btn-outline btn-primary w-[5rem]">
+                    <img src="assets/fa-arrow-right-from-bracket.png" alt="">
+                    LogOut</button>
+            </div>
+
+        </nav>
+
+
+
+        <!-- lohin section -->
+        <section class="md:py-10 py-5 m-0">
+            
+            <div class="hero min-h-screen">
+                <div class="hero-content flex-col lg:flex-row-reverse lg:justify-between lg:gap-x-28">
+                    <div>
+                        <img class="w-[30rem] lg:w-[35rem] mt-5 lg:mt-0" src="assets/hero-student.png" alt="">
+                    </div>
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+
+                            <h1 class="google-sans-eng text-4xl text-center lg:text-left"><span class="text-sky-400">English</span> is  Easy</h1>
+
+                            <p class="hind-siliguri-regular text-center lg:text-left">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+
+                            <fieldset class="fieldset">
+                                <label class="label">Name:</label>
+                                <input type="text" class="input" placeholder="Enter Your Name" />
+                                <label class="label">Password:</label>
+                                <input type="password" class="input" placeholder="Enter Your Password (123456)" />
+                                <button class="btn btn-neutral mt-4 bg-blue-600 border-none">Get Started</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
